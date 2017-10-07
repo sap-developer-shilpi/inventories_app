@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  loc_code: 1
+  loc_name: MyString
+  primany_representative: MyString
+  phone: 1
+  email: MyString
+
+two:
+  loc_code: 1
+  loc_name: MyString
+  primany_representative: MyString
+  phone: 1
+  email: MyString
