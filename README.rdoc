@@ -1,4 +1,7 @@
 This is an application about Inventory management
+
+PLease see the initial ER diagram. ER diagram.png
+
 This application works on 
 
 rails  version :4.2.5
