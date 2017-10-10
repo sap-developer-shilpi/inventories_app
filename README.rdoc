@@ -1,6 +1,6 @@
 This is an application about Inventory management
 
-PLease see the initial ER diagram. ER diagram.png
+PLease see the initial ER diagram. ER diagram.png https://github.com/sap-developer-shilpi/inventories_app/blob/master/ER%20Diagram.png
 
 This application works on 
 
