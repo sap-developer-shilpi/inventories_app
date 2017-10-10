@@ -11,22 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171007142430) do
+ActiveRecord::Schema.define(version: 20171010171707) do
 
   create_table "addresses", force: :cascade do |t|
-    t.integer  "house_num"
+    t.integer  "building_num"
     t.string   "street"
     t.integer  "pin_code"
     t.string   "city"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
     t.integer  "location_id"
   end
 
   create_table "locations", force: :cascade do |t|
     t.integer  "loc_code"
     t.string   "loc_name"
-    t.string   "primany_representative"
+    t.string   "primary_representative"
     t.integer  "phone"
     t.string   "email"
     t.datetime "created_at",             null: false

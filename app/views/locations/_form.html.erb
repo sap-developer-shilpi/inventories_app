@@ -23,7 +23,7 @@
          <%= f.label :Primary_Representative %>
        </div>
        <div class='col-sm-8' >
-         <%= f.text_field :primany_representative, class: "form-control", autofocus: true, placeholder: "Primary_Representative for location"  %>
+         <%= f.text_field :primary_representative, class: "form-control", autofocus: true, placeholder: "Primary_Representative for location"  %>
        </div>
       </div>
       <div class="form-group">
@@ -45,10 +45,10 @@
       <%= f.fields_for :address do |ff| %>
       <div class="form-group">
         <div class="control-label col-sm-2" >
-         <%= ff.label :House_num %>
+         <%= ff.label :building_num %>
         </div>
         <div class='col-sm-8' >
-         <%= ff.number_field :house_num, class: "form-control", autofocus: true, placeholder: "enter the house number"  %>
+         <%= ff.number_field :building_num, class: "form-control", autofocus: true, placeholder: "enter the building number"  %>
         </div>
       </div>
       <div class="form-group">

@@ -1,7 +1,7 @@
 class LocationsController < ApplicationController
    
    def index
-    @locations = Location.all
+    @locations = Location.paginate(page: params[:page], per_page: 3)
    end
 
    def show
@@ -21,9 +21,30 @@ class LocationsController < ApplicationController
      end
    end
    
+   def edit
+    @location = Location.find(params[:id])
+   end
+   
+   def update
+    @location = Location.find(params[:id])
+    if @location.update(location_params)
+      flash[:success] = "Information updated"
+      redirect_to locations_path
+    else
+      render 'edit'
+    end
+   end
+   
+   def destroy
+     @location = Location.find(params[:id])
+     @location.destroy
+    flash[:danger]= "location and the corresponding address deleted"
+    redirect_to locations_path
+   end
+   
    private
    
    def location_params
-    params.require(:location).permit(:loc_code, :loc_name, :primany_representative, :phone, :email, address_attributes: [ :id, :house_num, :street, :pin_code, :city])
+    params.require(:location).permit(:loc_code, :loc_name, :primary_representative, :phone, :email, address_attributes: [ :id, :building_num, :street, :pin_code, :city])
    end
 end 
