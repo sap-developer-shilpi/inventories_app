@@ -7,5 +7,6 @@ ruby version :ruby 2.3.4
 
 Code is in process
 
-location resource made
+location resource made (location having nested attribute address)
 address resource made
+
