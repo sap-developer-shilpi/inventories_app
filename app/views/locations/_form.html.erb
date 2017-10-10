@@ -1,0 +1,87 @@
+<%= render 'shared/errors', obj: @location %>
+<div class='row'>
+  <div class='col-xs-12'>
+    <%= form_for(setup_location(@location), :html => {class: "form-horizontal", role: "form" }) do |f| %>
+      <div class="form-group">
+       <div class="control-label col-sm-2" >
+         <%= f.label :loc_code %>
+       </div>
+       <div class='col-sm-8' >
+         <%= f.number_field :loc_code, class: "form-control", autofocus: true, placeholder: "loc_code for Location"  %>
+       </div>
+      </div>
+      <div class="form-group">
+       <div class="control-label col-sm-2" >
+         <%= f.label :loc_name %>
+       </div>
+       <div class='col-sm-8' >
+         <%= f.text_field :loc_name, class: "form-control", autofocus: true, placeholder: "loc_name for Location"  %>
+       </div>
+      </div>
+      <div class="form-group">
+       <div class="control-label col-sm-2" >
+         <%= f.label :Primary_Representative %>
+       </div>
+       <div class='col-sm-8' >
+         <%= f.text_field :primany_representative, class: "form-control", autofocus: true, placeholder: "Primary_Representative for location"  %>
+       </div>
+      </div>
+      <div class="form-group">
+       <div class="control-label col-sm-2" >
+         <%= f.label :Phone %>
+       </div>
+       <div class='col-sm-8' >
+         <%= f.number_field :phone, class: "form-control", autofocus: true, placeholder: "phone for location"  %>
+       </div>
+      </div>
+      <div class="form-group">
+        <div class="control-label col-sm-2" >
+         <%= f.label :email %>
+        </div>
+        <div class='col-sm-8' >
+         <%= f.email_field :email, class: "form-control", autofocus: true, placeholder: "enter email address for location"  %>
+        </div>
+      </div>
+      <%= f.fields_for :address do |ff| %>
+      <div class="form-group">
+        <div class="control-label col-sm-2" >
+         <%= ff.label :House_num %>
+        </div>
+        <div class='col-sm-8' >
+         <%= ff.number_field :house_num, class: "form-control", autofocus: true, placeholder: "enter the house number"  %>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="control-label col-sm-2" >
+         <%= ff.label :Street %>
+        </div>
+        <div class='col-sm-8' >
+         <%= ff.text_field :street, class: "form-control", autofocus: true, placeholder: "enter the street"  %>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="control-label col-sm-2" >
+         <%= ff.label :Pin_code %>
+        </div>
+        <div class='col-sm-8' >
+         <%= ff.number_field :pin_code, class: "form-control", autofocus: true, placeholder: "enter the pincode"  %>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="control-label col-sm-2" >
+         <%= ff.label :City %>
+        </div>
+        <div class='col-sm-8' >
+         <%= ff.text_field :city, class: "form-control", autofocus: true, placeholder: "enter city"  %>
+        </div>
+      </div>
+      <% end %>
+      </br>
+    <div class="form-group">
+       <div class="col-sm-offset-2 col-sm-10" >
+         <%= f.submit  class: "btn btn-primary btn-lg" %>
+        </div>
+    </div>    
+    <% end %>
+  </div>
+</div>

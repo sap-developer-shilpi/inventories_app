@@ -1,6 +1,7 @@
 class LocationsController < ApplicationController
    
    def index
+    @locations = Location.all
    end
 
    def show
@@ -23,6 +24,6 @@ class LocationsController < ApplicationController
    private
    
    def location_params
-    params.require(:location).permit(:loc_code, :loc_name, :primany_representative, :phone, :email)
+    params.require(:location).permit(:loc_code, :loc_name, :primany_representative, :phone, :email, address_attributes: [ :id, :house_num, :street, :pin_code, :city])
    end
 end 

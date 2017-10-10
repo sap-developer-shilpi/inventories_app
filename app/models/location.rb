@@ -1,4 +1,7 @@
 class Location < ActiveRecord::Base
+  has_one :address, dependent: :destroy
+  accepts_nested_attributes_for :address
+  
   before_save {self.email = email.downcase }
   validates :loc_code, presence: true, length: {maximum: 9, minimum: 3} 
   validates :loc_name, presence: true, uniqueness: {case_sensitive: false}, length: {maximum: 9, minimum: 3}
