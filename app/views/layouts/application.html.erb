@@ -46,7 +46,7 @@
           <span class="icon-bar"></span>
         </button>
           <ul class="nav navbar-nav">
-            <li><a class="navbar-brand" href="#">Inventories</a></li>
+            <li><%= link_to "Inventory Management", root_path, :class=> "navbar-brand"  %></li>
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Locations <span class="caret"></span></a>
              <ul class="dropdown-menu">
               <li><%= link_to "Create location", new_location_path %></li>
@@ -56,6 +56,14 @@
             </li>
             <li><%= link_to "Link2", "/path2"  %></li>
             <li><%= link_to "Link3", "/path3"  %></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <% if user_signed_in? %>
+               <li><%= link_to "log out", destroy_user_session_path , method: :delete %></li>
+            <% else %>
+               <li><%= link_to "Log in", new_user_session_path %></li>
+               <li><%= link_to "Sign up", new_user_registration_path %></li>
+            <% end %>  
           </ul>
         </div>
       </div>
