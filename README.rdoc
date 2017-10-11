@@ -1,6 +1,22 @@
-This is an application about Inventory management
+This is an application about Inventory management. To maintain the stock for small enterprises. Main goal is to make it freely available for small shops who can not afford costly softwares. Some basic features I am planning to implement.
 
-PLease see the initial ER diagram. ER diagram.png https://github.com/sap-developer-shilpi/inventories_app/blob/master/ER%20Diagram.png
+1) Maintain product stock for an enterprise, which has many branches at different locations.
+
+2) Once particular product at one location will go below threshold value. Automatic order to wholesaler can be triggered via email or online by using wholesaler API.
+
+3) Particular product can be marked as discounted item.
+
+4) Notify repersentative of shop when a particular product is coming closer to expiry.
+
+5) Generating reports of weekly, monthly and daily reports.
+
+6) Liking products to special coupons
+
+It is still in requirement gathering phase. But I am side by side implementing the requirements which are almost frozen.
+
+Below is the initial ER diagram on which I am currently working.
+
+https://github.com/sap-developer-shilpi/inventories_app/blob/master/ER%20Diagram.png
 
 This application works on 
 
