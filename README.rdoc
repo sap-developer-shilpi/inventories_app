@@ -12,6 +12,8 @@ This is an application about Inventory management. To maintain the stock for sma
 
 6) Liking products to special coupons
 
+7) Application will have different views one for each of these Adminsitrator(Owner of full organisation), Shop representative(Person sitting in a shop at particular location), Normal customer (Who can do online shopping)
+
 It is still in requirement gathering phase. But I am side by side implementing the requirements which are almost frozen.
 
 Below is the initial ER diagram on which I am currently working.
