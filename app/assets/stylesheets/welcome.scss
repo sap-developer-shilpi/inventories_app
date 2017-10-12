@@ -1,3 +1,32 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$navbar-default-bg: black;
+.jumbotron {
+background-image: asset-url('iStock.jpg');
+background-size: cover;
+background-position: 0% 25%;
+height: 600px;
+}
+.jumbotron h1 {
+ color: #fff;
+ text-align: center;
+ margin-bottom: 30px;
+ letter-spacing: -1px;
+ font-weight: bold;
+}
+btn-xlarge {
+font-size: 1.7em;
+background-color: black;
+}
+#logout{
+  background-color: black;
+  color:white;
+  font-size: 1.8em;
+  position: fixed; 
+  height: 50px; 
+  top: 600px; 
+  left: 500px; 
+  width: 15%; 
+}
