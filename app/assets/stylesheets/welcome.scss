@@ -2,7 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$navbar-default-bg: black;
 .jumbotron {
 background-image: asset-url('iStock.jpg');
 background-size: cover;
@@ -24,9 +23,9 @@ background-color: black;
   background-color: black;
   color:white;
   font-size: 1.8em;
-  position: fixed; 
+  position: absolute; 
   height: 50px; 
-  top: 600px; 
-  left: 500px; 
+  top: 540px; 
+  left: 370px; 
   width: 15%; 
 }
